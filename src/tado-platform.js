@@ -103,7 +103,8 @@ function TadoPlatform(log, config, api) {
                         }
 
                         // Adds the heating zone
-                        if (apiZone.type === 'HEATING') {
+                        if (apiZone.type === 'HEATING' && 
+                            !platform.config.hideHomeKitNativeAccessories) {
                             platform.log('Create heating zone with ID ' + apiZone.id + ' and name ' + apiZone.name + '.');
                             const zone = new TadoHeatingZone(platform, apiZone);
                             platform.zones.push(zone);

@@ -58,6 +58,12 @@
                 "default": false,
                 "description": "If enabled, a different logic is used for displaying the target state of the thermostate (AUTO, HEAT, OFF). This alternative logic shows the target state as OFF if the thermostat is set to OFF by Tado automation."
             },
+            "hideHomeKitNativeAccessories": {
+                "title": "Hide HomeKit Native Accessories",
+                "type": "boolean",
+                "default": false,
+                "description": "If enabled, accessories already supported by HomeKit (Thermostats) will be hidden and therefore not duplicated if already added directly into HomeKit."
+            },
             "zoneUpdateInterval": {
                 "title": "Zone Update Interval",
                 "type": "integer",
